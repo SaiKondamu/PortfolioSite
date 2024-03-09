@@ -27,3 +27,4 @@ The `sfdx-project.json` file contains useful configuration information for your 
 - [sf project deploy preview]
 - [sf project deploy start] - This will deploy everything in your vscode project to your scratch/dev org
 - ** .forceignore - we mention all the things that needs to be ignore while deploy/retrieve from scratch orgs.
+- we can preview our LWC Components before we deploy to Salesforce org - (https://developer.salesforce.com/tools/vscode/en/localdev/set-up-lwc-local-dev)
