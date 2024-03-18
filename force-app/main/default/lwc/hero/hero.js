@@ -1,7 +1,7 @@
 import { LightningElement } from 'lwc';
-import IMAGES from '@salesforce/resourceUrl/images';
+import IMAGES from '@salesforce/resourceUrl/personalImage';
 
 export default class Hero extends LightningElement {
 
-    imageURL = IMAGES + '/IMG_4132_min.png';
+    imageURL = IMAGES + '/4.png';
 }

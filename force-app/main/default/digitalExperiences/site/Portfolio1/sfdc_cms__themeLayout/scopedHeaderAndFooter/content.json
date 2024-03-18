@@ -15,6 +15,12 @@
             "sectionConfig" : "{\"UUID\":\"628dc440-c367-42b4-be18-24ffc2a1d283\",\"columns\":[{\"UUID\":\"2bb7c082-6748-4e6d-aa3a-f5ce59f6d2ac\",\"columnName\":\"Column 1\",\"columnKey\":\"headerSection\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
           },
           "children" : [ {
+            "children" : [ {
+              "attributes" : { },
+              "definition" : "c:navMenu",
+              "id" : "7cf8a860-1398-4941-a1a4-29acab00120f",
+              "type" : "component"
+            } ],
             "id" : "2bb7c082-6748-4e6d-aa3a-f5ce59f6d2ac",
             "name" : "headerSection",
             "title" : "Theme Header",

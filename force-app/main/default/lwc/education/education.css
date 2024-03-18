@@ -1,0 +1,64 @@
+.outer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.center-heading {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    width: 45%; /* Adjust as per your preference */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.school-logo {
+    flex: 0 0 150px;
+    margin-right: 10px;
+    padding: 15px;
+}
+
+.school-logo img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.highlight-text {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.courses-label {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.course-badge{
+    margin-bottom: 5px;
+}
+
+.courses{
+    padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        width: 100%;
+    }
+
+    .school-info {
+       text-align: center;
+    }
+
+}

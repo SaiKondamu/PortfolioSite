@@ -1,0 +1,34 @@
+<template>
+    <a name="education"></a>
+    <h1 class="center-heading">My Education Details</h1>
+    <div class="outer-container">
+        <template if:true={education_details}>
+            <template for:each={education_details} for:item="edu">
+                <lightning-card key={edu.degree} title={edu.degree} class="card-container">
+                    <div class="slds-grid slds-wrap slds-align_absolute-center">
+                        <div class="slds-col school-logo slds-size_12-of-12 slds-medium-size_4-of-12 slds-large-size_4-of-12">
+                            <img src={edu.imageURL} alt="School Logo">
+                        </div>
+                        <div class="slds-col school-info slds-size_12-of-12 slds-medium-size_8-of-12 slds-large-size_8-of-12 slds-align_absolute-center">
+                            <div class="slds-grid slds-wrap slds-align_absolute-center">
+                                <div class="slds-col slds-size_12-of-12">
+                                    <h2 class="highlight-text">{edu.school}</h2>
+                                    <p class="highlight-text">{edu.address}</p>
+                                    <p class="school-majors">Majors: {edu.majors}</p>
+                                </div>
+                                <template if:true={edu.courses}>
+                                    <div class="slds-col slds-size_12-of-12 courses">
+                                        <p class="courses-label">Courses:</p>
+                                        <template for:each={edu.courses} for:item="course">
+                                            <lightning-badge class="course-badge" key={course} label={course}></lightning-badge>
+                                        </template>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </lightning-card>
+            </template>
+        </template>
+    </div>
+</template>

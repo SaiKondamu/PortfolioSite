@@ -15,19 +15,21 @@
           },
           "children" : [ {
             "children" : [ {
+              "attributes" : { },
+              "definition" : "c:hero",
+              "id" : "c10a5c01-43c4-475d-b0eb-6a96472dc3eb",
+              "type" : "component"
+            }, {
               "attributes" : {
-                "backgroundColor" : "",
-                "isLinkable" : false,
-                "linkAssistiveText" : "",
-                "paddingHorizontal" : "none",
-                "paddingVertical" : "none",
-                "text" : "This is my portfolio site",
-                "textAlign" : "center",
-                "textDecoration" : "{}",
-                "textDisplayInfo" : "{\"textStyle\":\"heading-xlarge\",\"headingTag\":\"h1\"}"
+                "bachelorsCollegeName" : "Vasavi College of Engineering"
               },
-              "definition" : "dxp_base:textBlock",
-              "id" : "09f1ecbc-7f00-4259-95f1-db0448bbb586",
+              "definition" : "c:education",
+              "id" : "a6e9f4dd-623a-47ce-873f-2fe8cfbd617a",
+              "type" : "component"
+            }, {
+              "attributes" : { },
+              "definition" : "c:certifications",
+              "id" : "f4a3ac4c-5d18-4080-bd8e-9f6a9d731ce4",
               "type" : "component"
             } ],
             "id" : "65d0409d-0379-46c5-b696-6c502d6df190",

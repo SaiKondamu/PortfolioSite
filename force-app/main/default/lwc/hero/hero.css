@@ -1,32 +1,28 @@
 .outer-container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-img {
-    width: 100%;
-    border: 2px solid black;
-    border-radius: 7px;
+    background-image: linear-gradient(180deg, rgb(238, 244, 255) 0%, #FFFFFF 100%);
 }
 
 h1 {
     margin-top: 15px;
     font-size: 36px;
+    color: #032d60;
 }
 
 p {
     font-size: 24px;
+    color: #032d60;
 }
 
-button {
-    margin-top: 10px;
-    border-radius: 7px;
-    padding: 5px;
+.my-details{
+     text-align: center;
 }
 
 .call-to-action {
-    text-align: center;
+   text-align: center;
 }
+
 
 @media only screen and (min-width: 768px) {
 
@@ -34,11 +30,8 @@ button {
         display: flex;
         flex-direction: row-reverse;
     }
-    .container {
-        width: 50%;
+    .container image{
+        display: block;
+        float: left;
     }
-    .call-to-action {
-        margin-top: 25%;
-    }
-
 }

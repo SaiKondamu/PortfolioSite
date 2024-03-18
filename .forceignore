@@ -3,6 +3,9 @@
 #
 AppSwitcher.appMenu
 package.xml
+Audience
+Report*
+Dashboard*
 
 # LWC configuration files
 **/jsconfig.json
