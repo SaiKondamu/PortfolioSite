@@ -17,7 +17,8 @@ The `sfdx-project.json` file contains useful configuration information for your 
 - [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
 - [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
 
-
+## How to create a scratch org?
+- You can create a scratch org from vscode by assigning it the package-scratch-def file.
 ## SFDX Commands
 
 - To give a list of orgs your vscode is connected with - [sf org list]

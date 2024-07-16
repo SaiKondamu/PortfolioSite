@@ -1,16 +1,18 @@
 <template>
     <div class="outer-container slds-grid slds-wrap slds-align_absolute-center">
-        <div class="slds-col slds-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
-            <img src={imageURL} alt="">
-        </div>
         <div class="slds-col my-details slds-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
             <h1>Hello, I'm</h1>
             <h1>Sai Siddhartha Kondamu</h1>
             <p>Salesforce Developer</p>
             <!-- download CV -->
-            <lightning-button variant="brand" label="My Resume" title="My Resume" onclick={handleClick}
-                class="slds-m-left_x-small"></lightning-button>
+            <!-- <lightning-button variant="brand" label="My Resume" title="My Resume" onclick={handleClick}
+                class="slds-m-left_x-small"> -->
+                <a href="https://site-connect-5741-dev-ed.scratch.my.salesforce.com/sfc/p/8I0000016LZm/a/8I0000004WKJ/ACC4yv53VvGQ4d.7dE6mcc.N1mhYmFNccfgFj0puiRE" target="_blank">My Resume</a>
+            <!-- </lightning-button> -->
             <!-- Contact info -->
+        </div>
+        <div class="slds-col slds-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+            <img src={imageURL} alt="">
         </div>
     </div>
 </template>

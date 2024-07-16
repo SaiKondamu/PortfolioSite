@@ -28,7 +28,7 @@ p {
 
     .outer-container {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
     .container image{
         display: block;
