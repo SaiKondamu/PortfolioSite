@@ -1,0 +1,19 @@
+<template>
+    <a name="skills"></a>
+    <lightning-card>
+        <h1 class="center-heading">I'm Experienced in</h1>
+        <div class="skills-container">
+            <template if:true={skills} >
+                <template for:each={skills} for:item="skill">
+                    <article key={skill.name} class="slds-p-around_small">
+                        <lightning-icon icon-name="action:check" alternative-text="Approved" title="Approved" size="small"></lightning-icon>
+                        <div class="skill-details">
+                            <h3 class="skill-name">{skill.name}</h3>
+                            <p>{skill.level}</p>
+                        </div>
+                    </article>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>
