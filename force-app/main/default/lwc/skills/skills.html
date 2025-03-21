@@ -4,14 +4,16 @@
         <h1 class="center-heading">I'm Experienced in</h1>
         <div class="skills-container">
             <template if:true={skills} >
-                <template for:each={skills} for:item="skill">
-                    <article key={skill.name} class="slds-p-around_small">
-                        <lightning-icon icon-name="action:check" alternative-text="Approved" title="Approved" size="small"></lightning-icon>
-                        <div class="skill-details">
-                            <h3 class="skill-name">{skill.name}</h3>
-                            <p>{skill.level}</p>
-                        </div>
-                    </article>
+                <template for:each={skills} for:item="skill_set">
+                    <lightning-card key={skill_set.name} class="skillSet_Card">
+                        <h3 slot="title">
+                            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+                            {skill_set.set_name}
+                        </h3>
+                        <template for:each={skill_set.skills} for:item="skill">
+                            <lightning-badge key={skill.name} label={skill.name} variant="inverse"></lightning-badge>
+                        </template>
+                    </lightning-card>
                 </template>
             </template>
         </div>

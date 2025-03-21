@@ -1,0 +1,116 @@
+.center-heading {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Enforces up to 3 columns on desktop */
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px; /* Set a max-width for the container */
+    margin: auto; /* Center the container */
+    height: 500px; /* Assuming each project card is 250px tall */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.project-card {
+    height: 475px; /* Fixed height for each project card */
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.project-image {
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 auto;
+    display: block;
+    padding: 5px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-desc {
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-skills {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.skill-tag {
+    background-color: #e0f7fa;
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+    color: #007bff;
+    text-align: center;
+}
+
+.project-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.project-details {
+    font-size: 1rem;
+    color: #555;
+}
+
+.project-learn-more {
+    margin-top: auto;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 1rem;
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    .project-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* Override for tabs */
+@media screen and (min-width: 768px) and (max-width: 1024px) { /* Adjust based on your tab size */
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Same behavior as web */
+        height: 500px; /* Maintain height for 3 visible projects */
+        overflow-y: auto; /* Allow vertical scrolling */
+    }
+
+    .project-card {
+        height: 475px; /* Maintain card height */
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+}

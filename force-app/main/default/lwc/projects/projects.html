@@ -1,0 +1,25 @@
+<template>
+    <h1 class="center-heading">My Projects</h1>
+    <div class="projects-container">
+        <template if:true={projects}>
+            <template for:each={projects} for:item="project">
+                <div class="project-card" key={project.name}>
+                    <div class="project-image">
+                        <img src={project.imageURL} alt="Project Logo">
+                    </div>
+                    <div class="project-desc">
+                        <div class="project-skills">
+                            <template for:each={project.skill} for:item="skill">
+                                <span class="skill-tag" key={skill}>{skill}</span>
+                            </template>
+                        </div>
+                        <h2 class="project-header">{project.header}</h2>
+                        <a class="project-learn-more" href={project.github_url}>Github</a>
+                        <p class="project-details">{project.details}</p>
+                        <a class="project-learn-more" href={project.readmore}>Learn More</a>
+                    </div>
+                </div>
+            </template>
+        </template>
+    </div>
+</template>

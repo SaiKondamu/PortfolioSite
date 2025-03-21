@@ -1,20 +1,9 @@
-/* {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    margin: 5px;
-    box-sizing: border-box;
-    z-index: 20;
-} */
-.outer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
-/* Add a black background color to the top navigation */
 .topnav {
   background-color: white;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
   text-align: center;
   width: 100%;
   position: fixed;

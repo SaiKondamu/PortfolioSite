@@ -1,17 +1,21 @@
 <template>
     <div class="outer-container slds-grid slds-wrap slds-align_absolute-center">
-        <div class="slds-col my-details slds-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
-            <h1>Hello, I'm</h1>
-            <h1>Sai Siddhartha Kondamu</h1>
-            <p>Salesforce Developer</p>
-            <!-- download CV -->
-            <!-- <lightning-button variant="brand" label="My Resume" title="My Resume" onclick={handleClick}
-                class="slds-m-left_x-small"> -->
-                <a href="https://site-connect-5741-dev-ed.scratch.my.salesforce.com/sfc/p/8I0000016LZm/a/8I0000004WKJ/ACC4yv53VvGQ4d.7dE6mcc.N1mhYmFNccfgFj0puiRE" target="_blank">My Resume</a>
-            <!-- </lightning-button> -->
+        <div class="slds-col my-details slds-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_7-of-12">
+            <div class="about-me-section">
+                <h1>Hi, I'm Siddhartha</h1>
+                <p>I'm a certified Salesforce Developer and Administrator passionate about crafting custom solutions using Salesforce's
+                out-of-the-box features.</br>With expertise in integrations, LWC, Flow, and Asynchronous Apex, I
+                enjoy transforming complex requirements into efficient, user-friendly applications.</br>I'm also skilled in building custom
+                reports and dashboards, providing valuable insights and enhancing decision-making for businesses.</p>
+                <!-- download CV -->
+                <lightning-button variant="brand" label="My Resume" title="My Resume - In Progress" onclick={handleClick}
+                    class="slds-m-left_x-small"> 
+                    <!-- <a href="https://site-connect-5741-dev-ed.scratch.my.salesforce.com/sfc/p/8I0000016LZm/a/8I0000004WKJ/ACC4yv53VvGQ4d.7dE6mcc.N1mhYmFNccfgFj0puiRE" target="_blank">My Resume</a> -->
+                </lightning-button>
+            </div>
             <!-- Contact info -->
         </div>
-        <div class="slds-col slds-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_6-of-12">
+        <div class="slds-col slds-size_12-of-12 slds-medium-size_6-of-12 slds-large-size_5-of-12">
             <img src={imageURL} alt="">
         </div>
     </div>
